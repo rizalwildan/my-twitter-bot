@@ -2,10 +2,12 @@ const Rx = require('rxjs');
 const music = require('./musicmatch/main')({apikey:"bc4960f3bc99ee97ee52a540bc0429f1",format:"json",appid:""});
 const data = require('./artists_data.json');
 
-const dataset = data[Math.floor(Math.random()*data.length)];
+let dataset = '';
 
 function getArtist() {
     return Rx.Observable.create((observer) => {
+        dataset = data[Math.floor(Math.random()*data.length)];
+        console.log(dataset);
         music.artistSearch({q_artist:dataset.artist,page_size:1})
         .then(function(data) {
             let isi = data.message.body.artist_list;

@@ -10,7 +10,7 @@ const client = new Twitter({
 });
 
 console.log("RUN");
-setTimeout(function() {
+setInterval(() => {
 api.getArtist().subscribe((res) => {
   let id = res.rand.artist.artist_id;
 
@@ -25,7 +25,7 @@ api.getArtist().subscribe((res) => {
       api.getTrackLyric(track_id).subscribe((res) => {
         let isi = res.isi+"\n"+artist_name+" "+"'"+track_name+"' "+"\n#lyricquote";
         let params = {status: isi};
-
+        console.log(isi);
         client.post('statuses/update', params, (err, data, response) => {
           console.log('success');
         });
