@@ -1,0 +1,36 @@
+{
+  "name": "twitter-bot",
+  "version": "0.3.0",
+  "description": "Twitter Bot Share Music Lyric Quote",
+  "engines": {
+    "node": "8.9.1"
+  },
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "ejs": "^2.5.6",
+    "express": "^4.15.2",
+    "extend": "^3.0.1",
+    "got-promise": "^5.0.0",
+    "http": "0.0.0",
+    "query-parse": "^2.0.0",
+    "rxjs": "^6.0.0",
+    "twit": "^2.2.9"
+  },
+  "devDependencies": {
+    "request": "^2.81.0",
+    "tape": "^4.7.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rizalwildan/twitter-bot"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
+  "license": "MIT"
+}
