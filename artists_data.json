@@ -9,7 +9,7 @@
         "artist": "Queen"
     },
     {
-        "artist": "The Doors"
+        "artist": "Fstvlst"
     },
     {
         "artist": "Sheila on 7"
@@ -19,5 +19,11 @@
     },
     {
         "artist": "Barasuara"
+    },
+    {
+        "artist": "float"
+    },
+    {
+        "artist": "The Rain"
     }
 ]
